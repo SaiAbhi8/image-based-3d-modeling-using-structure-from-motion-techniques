@@ -35,16 +35,6 @@ The system allows users to:
 | **Bundle Adjustment** | Global optimization using Levenberg–Marquardt to minimize reprojection error. |
 | **3D Visualization** | Displays reconstructed 3D points and camera poses in the GUI. |
 
----
-
-## 🧠 Theory References
-- **Camera Calibration** – Zhengyou Zhang, *“A Flexible New Technique for Camera Calibration”*  
-- **Feature Matching** – Nistér et al., *“Scalable Recognition with a Vocabulary Tree”*, CVPR 2006  
-- **Model Estimation** – Fischler & Bolles, *“Random Sample Consensus (RANSAC)”*, 1981  
-- **Bundle Adjustment** – Triggs et al., *“Bundle Adjustment — A Modern Synthesis”*, 2000  
-
----
-
 ## 🖥️ Graphical User Interface (GUI)
 
 The GUI provides an intuitive way to execute the full SfM pipeline step-by-step.  
@@ -58,23 +48,11 @@ The GUI provides an intuitive way to execute the full SfM pipeline step-by-step.
 - **Register Images:** Incrementally register and triangulate new views.  
 - **Bundle Adjustment:** Refine 3D structure and camera poses globally.  
 - **View Results:** Visualize 3D point cloud and camera pose projections.
-
-### Example Outputs
-- Sparse 3D reconstructions of:
-  - B. C. Roy Statue, IIT Kharagpur  
-  - Elephant-shaped toy (multi-view capture)  
-  - South Building dataset (UNC, USA)  
-
 ---
 
 ## 🚀 Running the Project
 
 ### 1. Clone the Repository
-```bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
-```
-
 ### 2. Create a Virtual Environment (recommended)
 Using Anaconda:
 ```bash
@@ -114,30 +92,11 @@ python gui.py
 
 ---
 
-## 🧪 Sample Datasets
-You can use your own images or sample datasets:
-- Multi-view images of a static object captured from different angles.  
-- Checkerboard calibration images (for intrinsic calibration).  
-
----
-
 ## 📊 Results
 - Sparse 3D point cloud visualization  
 - Reconstructed camera trajectories  
 - Intermediate matching and geometry verification visualizations  
 
----
-
-## 🛠️ Dependencies
-- **Python 3.11+**
-- OpenCV  
-- NumPy  
-- SciPy  
-- Matplotlib  
-- PyQt / Tkinter (for GUI)  
-- FLANN / scikit-learn (for matching)  
-
----
 
 ## 📚 Future Work
 - Integrate dense reconstruction using Multi-View Stereo (MVS).  
